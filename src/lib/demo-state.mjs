@@ -13,10 +13,11 @@ export function normalizeDemo(value) {
   };
 }
 export function reducer(state, action) {
+  if (action && typeof action === "object" && action.type === "hydrate") return normalizeDemo(action.value);
   const s = normalizeDemo(state);
   switch (action) {
     case "charge": return { ...s, charge: Math.min(12, s.charge + 1) };
-    case "repair": return s.charge >= 3 ? { ...s, charge: s.charge - 3, repaired: true } : s;
+    case "repair": return !s.repaired && s.charge >= 3 ? { ...s, charge: s.charge - 3, repaired: true } : s;
     case "inspect": return s.repaired ? { ...s, inspected: true } : s;
     case "unknown": case "verify": return s.inspected ? { ...s, decision: action } : s;
     case "reset": return { ...INITIAL_DEMO };
