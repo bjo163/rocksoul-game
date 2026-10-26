@@ -17,9 +17,29 @@
 4. **World Patches 33** from XII's registry: source-indexed historical proposals/submission claims; #014 is conflicted, and no divine or independent external approval is verified.
 5. **THE BATTERIES four books**: structure referenced historically, but original full scripts/sequence require recovery and authorization. No four books have been invented to fill the gaps here.
 
-## Additional research candidates NOT pinned yet
+## Additional connected-source revision pins (snapshot only)
 
-`rocksoul`, `rocksoul-mftl`, `rocksoul-legend`, `rocksoul-superhero`, `rocksoul-aws`, `rocksoul-correlation`, `rocksoul-assets`, `moonframe`, `empire-of-the-light`, `A-L-L-A-H`, `moonwitness-corpus`, others in [SOURCE_ATLAS](SOURCE_ATLAS.md). Do not advertise SHA-specific full audits of these before pinning exact revisions and inspecting relevant files.
+These Git commit revisions are recorded to avoid following a moving `main` while researching. **A SHA alone does not equal a complete content, privacy, license or implementation audit.**
+
+| Repository | Observed SHA (2026-10-26) | Research role |
+|---|---|---|
+| [rocksoul](https://github.com/bjo163/rocksoul/tree/8dc142967d7d916e5191a89606cc532f5b14cffc) | `8dc142967d7d916e5191a89606cc532f5b14cffc` | Local-first engineering/quest metaphor |
+| [rocksoul-mftl](https://github.com/bjo163/rocksoul-mftl/tree/1519de291267eaa90960bcb04f7ac94e325d9d35) | `1519de291267eaa90960bcb04f7ac94e325d9d35` | STORY/research/fact distinction |
+| [rocksoul-legend](https://github.com/bjo163/rocksoul-legend/tree/1c1e851189530185cacf695a3c25adedce94fbb4) | `1c1e851189530185cacf695a3c25adedce94fbb4` | EVENT |
+| [rocksoul-superhero](https://github.com/bjo163/rocksoul-superhero/tree/89963d5f5801aec3d44d2d55538e2a882e37f86b) | `89963d5f5801aec3d44d2d55538e2a882e37f86b` | PERSON |
+| [rocksoul-aws](https://github.com/bjo163/rocksoul-aws/tree/719413cc3d6c5c8349a87a1863e84c0e0f97e1c9) | `719413cc3d6c5c8349a87a1863e84c0e0f97e1c9` | LAW |
+| [rocksoul-correlation](https://github.com/bjo163/rocksoul-correlation/tree/380ac810747a79b7efa22affb934b302ac224524) | `380ac810747a79b7efa22affb934b302ac224524` | Typed cross-domain relations |
+| [rocksoul-assets](https://github.com/bjo163/rocksoul-assets/tree/fd6a545160312bfe4b3419d846961abbcd7bfabd) | `fd6a545160312bfe4b3419d846961abbcd7bfabd` | Asset/art provenance |
+| [moonframe](https://github.com/bjo163/moonframe/tree/2ad8d70246ffc1b9907f57735a078417fe34a55d) | `2ad8d70246ffc1b9907f57735a078417fe34a55d` | Shared UI/skin research |
+| [empire-of-the-light](https://github.com/bjo163/empire-of-the-light/tree/38354ffff077d4ee1e17d40b39d86e41ce769817) | `38354ffff077d4ee1e17d40b39d86e41ce769817` | Project philosophy/governance |
+| [A-L-L-A-H](https://github.com/bjo163/A-L-L-A-H/tree/06ccdde1dc390ad9e00e91f2144dda3054b874ea) | `06ccdde1dc390ad9e00e91f2144dda3054b874ea` | Portal/creative ancestry |
+| [moonwitness-corpus](https://github.com/bjo163/moonwitness-corpus/tree/534a21893728de64b5f28f27ea600e8609d7b8c4) | `534a21893728de64b5f28f27ea600e8609d7b8c4` | Text editions/rights |
+| [rocksoul-crayon](https://github.com/bjo163/rocksoul-crayon/tree/bf079ca3ccf55d106ce8fae4ccc0fee2a01ea3d9) | `bf079ca3ccf55d106ce8fae4ccc0fee2a01ea3d9` | Research console |
+| [rocksoul-platform](https://github.com/bjo163/rocksoul-platform/tree/5febbdd4d40ae95c5bf18148bc18af6d48a43f79) | `5febbdd4d40ae95c5bf18148bc18af6d48a43f79` | Identity/ops reference |
+
+## Research that still needs document-level audits
+
+Snapshot hashes have now been pinned for listed projects, but many **individual documents, private originals, license terms and media manifests** still require inspection. See [SOURCE_ATLAS](SOURCE_ATLAS.md).
 
 ## Source quality & rights boundaries
 
