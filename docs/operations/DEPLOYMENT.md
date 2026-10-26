@@ -45,3 +45,7 @@ Direct main pushes are the user's current workflow; protect release integrity wi
 ## Supabase connection status — 2026-10-26
 
 Plugin connection is active, but listing shows no dedicated `rocksoul-game` Supabase project. Organization `bjo163's projects` has Free plan and older inactive projects; none were changed. The safer private signup-trigger migration is in GitHub only. Auth production readiness awaits explicit database target, running migration, and negative RLS tests.
+
+## Auth configuration API limitation
+
+The available Supabase project connector allows creating projects, SQL migrations and security checks, but **does not expose Auth URL Configuration updates**. Project database settings cannot substitute for GoTrue Site URL / Redirect URL management. Do not create an Auth redirect configuration table or promise successful magic-link sign-in without an actual configured redirect allowlist. The game remains playable in local guest-demo mode.

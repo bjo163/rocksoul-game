@@ -2,7 +2,7 @@
 
 > **The Moon Watches. The Record Remembers. Not Everything Forgotten Was Without Value.**
 
-**A MOONWITNESS XV story universe game** — a narrative-first, offline-ready 2D adventure RPG × idle restoration × optional social multiplayer. The game is **in preproduction**. This repository is the game-specific home; **[moonwitnessxv](https://github.com/bjo163/moonwitnessxv)** remains the broader knowledge, witness, research and ecosystem source.
+**A MOONWITNESS XV story universe game** — an early browser demo for a planned narrative-first, offline-ready 2D adventure RPG × idle restoration × optional social multiplayer. The game is **in preproduction**. This repository is the game-specific home; **[moonwitnessxv](https://github.com/bjo163/moonwitnessxv)** remains the broader knowledge, witness, research and ecosystem source.
 
 **Status:** `M1 BILINGUAL DEMO BUILT / STORY CANON CANDIDATE` — a **local-only interactive browser demo** exists, and the Next.js production build has passed CI. **Vercel's deployment list reports a READY production build**, but public route rendering was not independently accessible from our external verifier. An optional M2 Supabase account page and SQL migration are now in the repo; **no connected database, authenticated save, production game launch or approved original canon is claimed**.
 
@@ -43,15 +43,15 @@ Read the full foundation in this order:
 15. [**M0 pinned source snapshots**](docs/research/SOURCE_SNAPSHOTS.md), [**THE BATTERIES manuscript recovery**](docs/research/BATTERIES_RECOVERY.md) and [**canon review queue**](docs/story/CANON_REVIEW_QUEUE.md) — precise source versions and outstanding approvals.
 16. [**Deployment runbook**](docs/operations/DEPLOYMENT.md) and [**build validation**](docs/operations/M1_VALIDATION.md) — real CI evidence and the Vercel permission blocker.
 
-## Proposed stack, not yet implemented
+## Implementation stack and future extensions
 
 | Concern | Proposed first approach |
 | --- | --- |
 | Web shell & account UI | Next.js + React, JavaScript-first |
 | First playable | Web-based idle/restoration loop, accessible responsive UI |
 | Exploration (later slice) | Phaser 2D, dynamic import / browser-only canvas |
-| Hosting | Vercel, **not deployed yet** |
-| Account/storage | Supabase Auth + PostgreSQL with Row Level Security, **not configured yet** |
+| Hosting | Vercel; Git-linked production deployments reported READY |
+| Account/storage | Supabase project in Singapore, database migration and RLS active; login redirect and two-user E2E pending |
 | Social (later) | Supabase Realtime for lobby/chat/presence; not 60 FPS action synchronization |
 | Local play (later) | PWA / cache + IndexedDB; explicit local save boundary |
 | Real-time fast action (future only) | Evaluate an authoritative game server when truly necessary |
@@ -111,3 +111,7 @@ At source SHA [`648626bd`](https://github.com/bjo163/rocksoul-game/commit/648626
 ### Supabase plugin connected — project pending
 
 On 2026-10-26, Supabase organization discovery succeeded (`bjo163's projects`, Free plan). No dedicated `rocksoul-game` database was found, and no old MOONWITNESS database was modified. The un-applied migration now uses a private Auth signup trigger instead of a public privileged bootstrap RPC. A new project still needs owner-selected organization, cost approval if quoted, and live RLS/registration tests; see [M2 setup](docs/architecture/SUPABASE_M2_SETUP.md).
+
+## Automated auth integration checkpoint
+
+The ROCKSOUL Supabase project is created, database migration applied, and the two public Vercel environment variables installed. Read-only simulated-role checks verified that a role without a user JWT cannot access existing save rows or mutate saves. **Auth redirect allowlist management is not available through the connected Supabase operations**, so magic-link signup has NOT yet been verified. This is a tracked integration blocker, not an instruction to alter the database manually or to reuse an old MOONWITNESS project. No player email or credentials were requested.

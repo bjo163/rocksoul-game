@@ -51,3 +51,11 @@ The Supabase plugin successfully listed **one organization** named `bjo163's pro
 - Vercel project environment variables `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` configured for production/preview, using a **publishable** key only. No secret/service-role key is committed.
 - **Open:** a new Vercel production build is required to embed the newly created environment variables, and Supabase Auth Site URL/allowed redirect URL settings need verification. The Vercel deployment creation API returned `403 Forbidden`; push-based Git integration can trigger a new build. Browser magic-link login, signup trigger E2E and two-user RLS negative tests are not yet verified.
 
+
+## 2026-10-26 autonomous verification checkpoint
+
+- Browser tab exposed the earlier ROCKSOUL `/id/play` demo and its interactive UI content; no live user signup was attempted.
+- Read-only SQL transaction with `SET LOCAL ROLE authenticated` and **no JWT sub** returned 0 visible profiles, 0 visible saves, `INSERT=false`, `UPDATE=false`. Because both tables were empty, this does **not** prove actual cross-user isolation. No users were created.
+- The Supabase connector currently has no documented management action for **Auth Site URL** or **allowed redirect URLs**. PostgreSQL SQL cannot be substituted for GoTrue Auth configuration. Do not claim those settings changed.
+- A real sign-in requires those Auth redirect settings to include the canonical Vercel production origin and `/id/account`, `/en/account`. Once settings are accessible via a supported authorized management action or a logged-in UI in Work mode, configure them and run a real two-account signup/RLS test.
+- Latest Vercel environment variables are already set; do not ask for or expose secret keys.
