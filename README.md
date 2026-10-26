@@ -27,7 +27,7 @@ The original [MOONWITNESS II](https://github.com/bjo163/moonwitness-II/blob/main
 Read the full foundation in this order:
 
 1. [**Master Blueprint**](BLUEPRINT.md) — product contracts and boundaries.
-3. [**Master Story Bible**](docs/story/MASTER_STORY_BIBLE.md) — story vision, source-based foundations, world/characters, complete eight-era adaptation, plot decisions, source gaps.
+2. [**Master Story Bible**](docs/story/MASTER_STORY_BIBLE.md) — story vision, source-based foundations, world/characters, complete eight-era adaptation, plot decisions, source gaps.
 3. [**Canon & editorial policy**](docs/story/CANON_POLICY.md) — fact vs interpretation vs fiction, privacy, religious/identity boundaries, rights.
 4. [**Character bible**](docs/story/CHARACTERS.md) — identities/aliases, conflicts and distinctions.
 5. [**Story arc and quests**](docs/story/ERA_ARCS.md) — eight-era spine and playable chapter loops.
