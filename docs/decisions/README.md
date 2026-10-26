@@ -17,6 +17,9 @@
 | DEC-012 | `ARSY` remains a separate XV Hub, not recreated in game | **XV REFERENCE** | Game APIs have their own future DB owner |
 | DEC-013 | Initial gameplay: no combat, single station and beacon | **PROPOSED MVP** | Validate story and save/economy before world expansion |
 | DEC-014 | Game software and story/music/assets licensing | **OPEN** | Do not assert all-rights-reserved or permissive license by assumption |
+| DEC-015 | Use npm for initial independently deployed game preview, Node 22, pinned direct Next/React versions | **IMPLEMENTED TEMPORARY ENGINEERING CHOICE** | Green GitHub CI; a committed lockfile/pnpm migration policy remains open |
+| DEC-016 | Signal Station demo persists only in localStorage; no account/server/competitive currency | **IMPLEMENTED ISOLATED DEMO** | Never represent it as a verified online game economy |
+| DEC-017 | Git-linked Vercel project creation attempted, permission denied 403 | **EXTERNAL BLOCKER** | See operations runbook; not a deployment success |
 
 ## Rules for new decisions
 1. Add a new stable DEC row (never reuse ID); include what changes, why, alternatives, owner, date, impact, rollback.

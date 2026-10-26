@@ -4,7 +4,7 @@
 
 **A MOONWITNESS XV story universe game** — a narrative-first, offline-ready 2D adventure RPG × idle restoration × optional social multiplayer. The game is **in preproduction**. This repository is the game-specific home; **[moonwitnessxv](https://github.com/bjo163/moonwitnessxv)** remains the broader knowledge, witness, research and ecosystem source.
 
-**Status:** `FOUNDATION / STORY CANON CANDIDATE` — story adaptation is drafted, **no playable build, Vercel deployment, Supabase project, or approved release is claimed**.
+**Status:** `M1 BILINGUAL DEMO BUILT / STORY CANON CANDIDATE` — a **local-only interactive browser demo** exists, and the Next.js production build has passed CI. **No Vercel deployment URL, shared online save, Supabase integration, production game launch or approved original canon is claimed**.
 
 ## Premise
 
@@ -38,8 +38,10 @@ Read the full foundation in this order:
 10. [**Roadmap & microtasks**](TODO.md) — proposed stages, dependencies, acceptance gates.
 11. [**Decisions register**](docs/decisions/README.md) — explicit approved vs proposed architecture and narrative decisions.
 12. [**Visual direction**](docs/design/VISUAL_DIRECTION.md) — manga-lines, grunge, faceless crew, accessible UI and licensing.
-13. [**99 chapter coverage**](docs/research/ARCHIVE_COVERAGE_99.md) and [**33 World Patch registry**](docs/research/WORLD_PATCHES_33.md) — archival indices, not authenticated playable canon.
+13. [**99 chapter coverage**](docs/research/ARCHIVE_COVERAGE_99.md), [**99-row adaptation crosswalk**](docs/research/ARCHIVE_CROSSWALK_99.md) and [**33 World Patch registry**](docs/research/WORLD_PATCHES_33.md) — archival indices, not authenticated playable canon.
 14. [**AGENTS.md**](AGENTS.md) — local coding agent rules and no-duplicate-branch practice.
+15. [**M0 pinned source snapshots**](docs/research/SOURCE_SNAPSHOTS.md), [**THE BATTERIES manuscript recovery**](docs/research/BATTERIES_RECOVERY.md) and [**canon review queue**](docs/story/CANON_REVIEW_QUEUE.md) — precise source versions and outstanding approvals.
+16. [**Deployment runbook**](docs/operations/DEPLOYMENT.md) and [**build validation**](docs/operations/M1_VALIDATION.md) — real CI evidence and the Vercel permission blocker.
 
 ## Proposed stack, not yet implemented
 
@@ -67,7 +69,23 @@ This is the **owner-created independent game repository** as of 2026-10-26, supe
 - **No unlicensed excerpts, portraits or music assets** bundled into game by default; personal materials are private unless explicit publication authorization exists.
 - **No 'all tasks complete' solely from green CI**, and no fabricated canon where primary source is missing.
 
-## First playable target
+## Interactive browser demo (M1) and first online target
+
+The site source now contains `/id`, `/en`, `/id/play`, `/en/play`, `/id/world`, and `/id/archive`. The Signal Station demo charges a transmitter, permits a story choice and saves **only to the current browser's localStorage**. This is an illustrative guest preview and never grants online assets, shared rewards or real multiplayer. It has **not yet been deployed** because the Vercel connector returned HTTP 403 during project creation.
+
+### Local run (Node.js 22)
+
+```bash
+npm install
+npm run check
+npm run dev
+# visit http://localhost:3000/id or /en
+npm run build
+```
+
+These scripts passed in [GitHub Actions](https://github.com/bjo163/rocksoul-game/actions/runs/40323816638). Initial MVP intentionally uses npm and exact direct dependency versions for simple Vercel onboarding; a committed transitive dependency lockfile and formal dependency policy remain a tracked M1-07 gap. Review project import steps in [deployment runbook](docs/operations/DEPLOYMENT.md).
+
+### First authenticated playable target
 
 The first **vertical slice** is *The First Signal*: one restoration screen, one radio beacon, one energy loop, one NPC dialogue, one playable story quest, a saved progress record and a verifiable online game loop. Add local cache/Phaser only when the core reward/identity contracts are in place.
 

@@ -1,6 +1,6 @@
 # ROCKSOUL GAME — MASTER TODO / EXECUTION LEDGER
 
-**Status:** PREPRODUCTION · Plan authored 2026-10-26 · **Unchecked = not verified complete**. This plan is a target, not a declaration that software or services exist. Current game repository is `bjo163/rocksoul-game` (`main` only); XV and historical repos remain read-only sources.
+**Status:** M0/M1 FOUNDATION UNDER EXECUTION · Plan authored 2026-10-26 · **Unchecked = not verified complete**. This plan is a target, not a declaration that software or services exist. Current game repository is `bjo163/rocksoul-game` (`main` only); XV and historical repos remain read-only sources.
 
 ## Priority & ownership
 - **P0**: must complete for the first online playable proof; **P1**: offline/RPG growth; **P2**: optional social/expansion/release governance.
@@ -15,28 +15,31 @@ Actual dependency changes require updating this register; no claiming future wor
 
 ## M0 — SOURCE / STORY FREEZE (P0)
 
-- [ ] **M0-01** Verify main HEAD and document baseline SHA
-  - **Acceptance:** Repository head recorded, no new branch
+**Current gate:** 8/9 completed documentation tasks; M0-09 requires a full publication-rights/private-source/likeness ledger and cannot be auto-approved. More material may be recovered without overwriting any prior originals.
+
+
+- [x] **M0-01** Verify main HEAD and document baseline SHA
+  - **Acceptance:** Verified remote head, source/release validation in docs/operations/M1_VALIDATION.md; no new branch
   - **Likely file scope:** `README.md`
-- [ ] **M0-02** Confirm README, canon constitution and story bible links
-  - **Acceptance:** All linked internal docs exist and describe statuses accurately
+- [x] **M0-02** Confirm README, canon constitution and story bible links
+  - **Acceptance:** README/story/canon/internal doc links resolve in the verified Git tree; incomplete originals and Vercel blocker explicitly labeled
   - **Likely file scope:** `README.md;docs/story/*`
-- [ ] **M0-03** Pin the source SHA for original MoonWitness II blueprint
-  - **Acceptance:** Commit SHA and precise heading/locator entered; text unchanged
+- [x] **M0-03** Pin the source SHA for original MoonWitness II blueprint
+  - **Acceptance:** II pinned SHA + §08/§06/source file in SOURCE_SNAPSHOTS.md; no historical source changed
   - **Likely file scope:** `docs/research/SOURCE_ATLAS.md`
-- [ ] **M0-04** Pin XV narrative, XIV V10 and XII Patch registry source revisions
-  - **Acceptance:** SHA, path, retrieval date and rights noted for each
+- [x] **M0-04** Pin XV narrative, XIV V10 and XII Patch registry source revisions
+  - **Acceptance:** XV/XIV/XII pinned SHA/path + retrieval date, rights limitations in SOURCE_SNAPSHOTS.md
   - **Likely file scope:** `docs/research/SOURCE_ATLAS.md`
-- [ ] **M0-05** Crosswalk 99 chapter headings to original-source availability
-  - **Acceptance:** 99 rows each SOURCE/NEEDS_ORIGINAL and role, no invented script
+- [x] **M0-05** Crosswalk 99 chapter headings to original-source availability
+  - **Acceptance:** 99 crosswalk rows in docs/research/ARCHIVE_CROSSWALK_99.md; each original remains NEEDS_ORIGINAL until source rights/revision approval
   - **Likely file scope:** `docs/research/ARCHIVE_COVERAGE_99.md`
-- [ ] **M0-06** Resolve 33 World Patch status inheritance
+- [x] **M0-06** Resolve 33 World Patch status inheritance
   - **Acceptance:** Keep #014 unresolved and original status/count per row
   - **Likely file scope:** `docs/research/WORLD_PATCHES_33.md`
-- [ ] **M0-07** Create detailed THE BATTERIES four-book recovery manifest
+- [x] **M0-07** Create detailed THE BATTERIES four-book recovery manifest
   - **Acceptance:** Four slots source status and missing manuscript explicitly stated
   - **Likely file scope:** `docs/research/`
-- [ ] **M0-08** Prepare editor review of THE LISTENER and PERFECT RECORD
+- [x] **M0-08** Prepare editor review of THE LISTENER and PERFECT RECORD
   - **Acceptance:** Candidate IDs and disagreement outcomes documented; no auto-approval
   - **Likely file scope:** `docs/story/`
 - [ ] **M0-09** Review private memories, media/music and real-person aliases
@@ -46,22 +49,25 @@ Actual dependency changes require updating this register; no claiming future wor
 
 ## M1 — WEB FOUNDATION / VERCEL PREVIEW (P0)
 
-- [ ] **M1-01** Initialize Next.js JavaScript ESM and minimal package scripts
-  - **Acceptance:** pnpm install/test/lint/build work under documented Node version
+**Current gate:** 5/9 tasks met by verified source and [CI run 40323816638](https://github.com/bjo163/rocksoul-game/actions/runs/40323816638). Responsive/reduced-motion styles are implemented but browser-device E2E is not yet verified (M1-02). CI exists but a committed dependency lockfile is missing (M1-07). Vercel project creation returned **403 Forbidden**, so M1-08 is BLOCKED pending correct team permissions/project import. Security headers and loading/error UI exist; full CSP/negative-browser checks (M1-09) remain open.
+
+
+- [x] **M1-01** Initialize Next.js JavaScript ESM and minimal package scripts
+  - **Acceptance:** Node 22 npm install + structure/JS tests + Next.js production build PASS at a cited CI run (npm chosen for standalone preview; no lockfile yet)
   - **Likely file scope:** `package.json;src/`
 - [ ] **M1-02** Create layout tokens and responsive root shell
   - **Acceptance:** Mobile+desktop, keyboard and reduced motion work
   - **Likely file scope:** `src/app/;src/styles/`
-- [ ] **M1-03** Implement Indonesian/English locale switcher and dictionaries
+- [x] **M1-03** Implement Indonesian/English locale switcher and dictionaries
   - **Acceptance:** /id and /en stable pages; no translated source claims
   - **Likely file scope:** `src/`
-- [ ] **M1-04** Implement landing / story premise with proposed-canon badges
+- [x] **M1-04** Implement landing / story premise with proposed-canon badges
   - **Acceptance:** No inaccurate 'live MMO' or shipped gameplay status
   - **Likely file scope:** `src/app/`
-- [ ] **M1-05** Build game scene interface placeholder with no bogus 3D claims
+- [x] **M1-05** Build game scene interface placeholder with no bogus 3D claims
   - **Acceptance:** Story intro, enter-station link, accessible fallback
   - **Likely file scope:** `src/`
-- [ ] **M1-06** Add unit-test runner and smoke test for navigation/story labels
+- [x] **M1-06** Add unit-test runner and smoke test for navigation/story labels
   - **Acceptance:** Tests pass locally; CI job run verified at commit
   - **Likely file scope:** `tests/;.github/workflows/`
 - [ ] **M1-07** Add GitHub Actions install/lint/test/build checks

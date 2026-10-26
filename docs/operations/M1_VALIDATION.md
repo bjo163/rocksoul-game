@@ -10,7 +10,7 @@
 | Story completeness | [Master Bible](../story/MASTER_STORY_BIBLE.md), 99 heading crosswalk, 33 patch status, BATTERIES missing-book manifest | DOCUMENTED; original texts and approvals missing |
 | Game web scaffold | Next.js 16.4.3 / React 19.3.1 JS ESM, Node 22, pages localized id/en | PUSHED |
 | Browser demo | Source `src/components/StationDemo.jsx`; localStorage, one beacon, unknown/verify choice | CODE PRESENT, browser E2E pending |
-| Automated validation | [GitHub Actions 40323160770](https://github.com/bjo163/rocksoul-game/actions/runs/40323160770), commit `973cd1429643c60a79921048d3c4ce6a488aaa65` | **PASS** install, structure/test/build |
+| Automated validation | [GitHub Actions 40323816638](https://github.com/bjo163/rocksoul-game/actions/runs/40323816638), commit `0c86c9c776b74b7a0e2451faa67db6440d318461` | **PASS** install, structure/Node tests/Next build |
 | Vercel deployment | Git-project creation call returned `403 Forbidden` | **BLOCKED** – no verified URL |
 | Supabase Auth/DB | Not provisioned and deliberately not pretended active | NOT STARTED (M2) |
 | Server economy, true online saves, Phaser | Later milestones | NOT STARTED |
