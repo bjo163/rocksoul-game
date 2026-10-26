@@ -1,0 +1,35 @@
+# local/runtime
+node_modules/
+.next/
+out/
+dist/
+build/
+coverage/
+.turbo/
+*.tsbuildinfo
+.cache/
+
+# local auth and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# test/cache/editor
+playwright-report/
+test-results/
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.log
+pnpm-debug.log*
+
+# private archives / unpublished manuscripts must not enter public Git
+private/
+secrets/
+local-private/
