@@ -26,16 +26,20 @@ The original [MOONWITNESS II](https://github.com/bjo163/moonwitness-II/blob/main
 
 Read the full foundation in this order:
 
-1. [**Master Story Bible**](docs/story/MASTER_STORY_BIBLE.md) — story vision, source-based foundations, world/characters, complete eight-era adaptation, plot decisions, source gaps.
-2. [**Canon & editorial policy**](docs/story/CANON_POLICY.md) — fact vs interpretation vs fiction, privacy, religious/identity boundaries, rights.
-3. [**Character bible**](docs/story/CHARACTERS.md) — identities/aliases, conflicts and distinctions.
-4. [**Story arc and quests**](docs/story/ERA_ARCS.md) — eight-era spine and playable chapter loops.
-5. [**World atlas**](docs/world/WORLD_ATLAS.md) — proposed regions, AETHERION boundaries and travel system.
-6. [**Game design document**](docs/game/GAME_DESIGN.md) — gameplay pillars, MVP vertical slice, offline/online split, fair economy.
-7. [**Technical blueprint**](docs/architecture/TECHNICAL_BLUEPRINT.md) — Next.js/JS, Phaser (later), Supabase, Vercel, offline strategy.
-8. [**Source atlas & gaps**](docs/research/SOURCE_ATLAS.md) — traceability and unresolved archival originals.
-9. [**Roadmap & microtasks**](TODO.md) — proposed stages, dependencies, acceptance gates.
-10. [**Decisions register**](docs/decisions/README.md) — explicit approved vs proposed architecture and narrative decisions.
+1. [**Master Blueprint**](BLUEPRINT.md) — product contracts and boundaries.
+3. [**Master Story Bible**](docs/story/MASTER_STORY_BIBLE.md) — story vision, source-based foundations, world/characters, complete eight-era adaptation, plot decisions, source gaps.
+3. [**Canon & editorial policy**](docs/story/CANON_POLICY.md) — fact vs interpretation vs fiction, privacy, religious/identity boundaries, rights.
+4. [**Character bible**](docs/story/CHARACTERS.md) — identities/aliases, conflicts and distinctions.
+5. [**Story arc and quests**](docs/story/ERA_ARCS.md) — eight-era spine and playable chapter loops.
+6. [**World atlas**](docs/world/WORLD_ATLAS.md) — proposed regions, AETHERION boundaries and travel system.
+7. [**Game design document**](docs/game/GAME_DESIGN.md) — gameplay pillars, MVP vertical slice, offline/online split, fair economy.
+8. [**Technical blueprint**](docs/architecture/TECHNICAL_BLUEPRINT.md) — Next.js/JS, Phaser (later), Supabase, Vercel, offline strategy.
+9. [**Source atlas & gaps**](docs/research/SOURCE_ATLAS.md) — traceability and unresolved archival originals.
+10. [**Roadmap & microtasks**](TODO.md) — proposed stages, dependencies, acceptance gates.
+11. [**Decisions register**](docs/decisions/README.md) — explicit approved vs proposed architecture and narrative decisions.
+12. [**Visual direction**](docs/design/VISUAL_DIRECTION.md) — manga-lines, grunge, faceless crew, accessible UI and licensing.
+13. [**99 chapter coverage**](docs/research/ARCHIVE_COVERAGE_99.md) and [**33 World Patch registry**](docs/research/WORLD_PATCHES_33.md) — archival indices, not authenticated playable canon.
+14. [**AGENTS.md**](AGENTS.md) — local coding agent rules and no-duplicate-branch practice.
 
 ## Proposed stack, not yet implemented
 
