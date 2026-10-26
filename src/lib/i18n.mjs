@@ -3,7 +3,7 @@ export const isLocale = (value) => locales.includes(value);
 export const defaultLocale = "id";
 export const messages = Object.freeze({
   id: {
-    nav: { home: "Beranda", play: "Main demo", world: "Dunia", archive: "Arsip", language: "Bahasa" },
+    nav: { home: "Beranda", play: "Main demo", world: "Dunia", archive: "Arsip", account: "Akun", language: "Bahasa" },
     home: {
       eyebrow: "MOONWITNESS XV / ROCKSOUL EXPERIMENT 001",
       title: "THE LOST SIGNAL",
@@ -39,11 +39,12 @@ export const messages = Object.freeze({
     },
     world: { kicker:"WORLD / REGIONS",title:"KARTOGRAFI SINYAL",intro:"Wilayah berikut merupakan rancangan fiksi, bukan lokasi atau fasilitas sungguhan.", labels:["SIGNAL STATION ZERO","MOON ARCHIVE","ELECTRIC FOREST","HAVEN / BASECAMP"],bodies:["Titik kedatangan dan pusat perbaikan pemancar.","Berkas, kesaksian, dan pertanyaan yang masih terbuka.","Jalur bercabang dan petunjuk dari para Runaways.","Pemulihan, bantuan, dan kesempatan kedua."],locked:"KANDIDAT REGION",open:"DEMO TERSEDIA" },
     archive: { kicker:"WITNESS ARCHIVE",title:"CATATAN YANG BELUM SELESAI",intro:"Baca jejak kisah dengan batas yang jelas antara sumber historis dan adaptasi baru.",statuses:["SUMBER TERARSIP","ADAPTASI DIAJUKAN","SUMBER BELUM LENGKAP"],items:["THE SHADOW / BEFORE LIGHT","THE LISTENER / LOST SIGNAL","THE BATTERIES / FOUR BOOKS"],notes:["Motif seseorang yang sengaja meminta dilupakan berasal dari MOONWITNESS II.","Protagonis pemain baru; belum disahkan sebagai canon asli.","Naskah empat buku masih membutuhkan pemulihan arsip."],source:"SUMBER CERITA",visit:"PELAJARI DUNIA" },
+    account:{ title:"AKUN / THE LISTENER", kicker:"ACCOUNT TERMINAL / PHASE M2", intro:"Masuk menggunakan email untuk menyiapkan identitas dan satu slot save game online. Demo pemancar tetap terpisah.", unavailable:"Supabase belum dikonfigurasi. Demo browser tetap bisa dimainkan. Setelah proyek Supabase dibuat, atur dua variabel publik di Vercel.", email:"EMAIL", submit:"KIRIM TAUTAN MASUK", sending:"MENGIRIM...", sent:"Jika alamat diizinkan, periksa email Anda untuk tautan masuk.", connected:"ANDA SUDAH MASUK", bootstrapping:"MEMBUKA SAVE GAME...", profile:"PROFIL GAME", save:"SAVE GAME ONLINE", era:"ERA", revision:"REVISI", state:"STATUS", pending:"BELUM DIBUAT", signout:"KELUAR", error:"Tidak dapat terhubung ke layanan akun. Periksa konfigurasi dan migrasi Supabase.", signIn:"Masuk lewat email", note:"Slot save online baru berisi progres awal, belum mengimpor demo lokal dan belum memiliki reward yang bisa diperdagangkan.", unavailableShort:"SUPABASE BELUM TERHUBUNG", signoutFailed:"Gagal keluar dari sesi." },
     footer:"DISEBABKAN OLEH IMAJINASI · DIDASARKAN PADA ARSIP · TANPA KLAIM OTORITAS ILAHI",
     a11y: { skip:"Lewati navigasi",earth:"Bulan dan jalur sinyal bergaya ilustrasi",status:"Status stasiun" }
   },
   en: {
-    nav: { home: "Home", play: "Play demo", world: "World", archive: "Archive", language: "Language" },
+    nav: { home: "Home", play: "Play demo", world: "World", archive: "Archive", account: "Account", language: "Language" },
     home: {
       eyebrow: "MOONWITNESS XV / ROCKSOUL EXPERIMENT 001",
       title: "THE LOST SIGNAL",
@@ -74,6 +75,7 @@ export const messages = Object.freeze({
     },
     world:{kicker:"WORLD / REGIONS",title:"CARTOGRAPHY OF SIGNALS",intro:"These are proposed fictional regions, not real places or facilities.",labels:["SIGNAL STATION ZERO","MOON ARCHIVE","ELECTRIC FOREST","HAVEN / BASECAMP"],bodies:["Your arrival point and transmitter repair station.","Records, witnesses, and unresolved questions.","Branching routes and clues from the Runaways.","Restoration, care, and second chances."],locked:"REGION CANDIDATE",open:"DEMO AVAILABLE"},
     archive:{kicker:"WITNESS ARCHIVE",title:"UNFINISHED RECORDS",intro:"Explore story traces while keeping original source and new adaptation distinct.",statuses:["RECORDED SOURCE","PROPOSED ADAPTATION","SOURCE INCOMPLETE"],items:["THE SHADOW / BEFORE LIGHT","THE LISTENER / LOST SIGNAL","THE BATTERIES / FOUR BOOKS"],notes:["The intentionally-forgotten motif comes from MOONWITNESS II.","A new player protagonist, not approved original canon.","The four-book manuscripts still require archival recovery."],source:"STORY SOURCES",visit:"EXPLORE WORLD"},
+    account:{ title:"ACCOUNT / THE LISTENER", kicker:"ACCOUNT TERMINAL / PHASE M2", intro:"Sign in with email to set up your identity and one online save slot. The beacon browser demo stays separate.", unavailable:"Supabase is not configured yet. The browser demo remains playable. Once your Supabase project is ready, set the two public environment variables in Vercel.", email:"EMAIL", submit:"SEND SIGN-IN LINK", sending:"SENDING...", sent:"If the address is allowed, check your email for a sign-in link.", connected:"YOU ARE SIGNED IN", bootstrapping:"OPENING GAME SAVE...", profile:"GAME PROFILE", save:"ONLINE GAME SAVE", era:"ERA", revision:"REVISION", state:"STATUS", pending:"NOT CREATED YET", signout:"SIGN OUT", error:"Could not connect to the account service. Check Supabase configuration and migration.", signIn:"Email sign in", note:"This new online save slot contains only initial progress. It does not import your local demo or award tradeable items.", unavailableShort:"SUPABASE NOT CONNECTED", signoutFailed:"Could not sign out." },
     footer:"BUILT FROM IMAGINATION · GROUNDED IN ARCHIVES · CLAIMS NO DIVINE AUTHORITY",
     a11y:{skip:"Skip navigation",earth:"Stylized moon and signal routes illustration",status:"Station status"}
   }

@@ -49,7 +49,7 @@ Actual dependency changes require updating this register; no claiming future wor
 
 ## M1 — WEB FOUNDATION / VERCEL PREVIEW (P0)
 
-**Current gate:** 5/9 tasks met by verified source and [CI run 40323816638](https://github.com/bjo163/rocksoul-game/actions/runs/40323816638). Responsive/reduced-motion styles are implemented but browser-device E2E is not yet verified (M1-02). CI exists but a committed dependency lockfile is missing (M1-07). Vercel project creation returned **403 Forbidden**, so M1-08 is BLOCKED pending correct team permissions/project import. Security headers and loading/error UI exist; full CSP/negative-browser checks (M1-09) remain open.
+**Current gate:** 5/9 tasks met by verified source and [CI run 40323816638](https://github.com/bjo163/rocksoul-game/actions/runs/40323816638). Responsive/reduced-motion styles are implemented but browser-device E2E is not yet verified (M1-02). CI exists but a committed dependency lockfile is missing (M1-07). Owner has since imported the Vercel project: provider lists **READY** production deployment from `main`; M1-08 remains open until public route/browser smoke is verified. Security headers and loading/error UI exist; full CSP/negative-browser checks (M1-09) remain open.
 
 
 - [x] **M1-01** Initialize Next.js JavaScript ESM and minimal package scripts
@@ -82,6 +82,9 @@ Actual dependency changes require updating this register; no claiming future wor
 
 
 ## M2 — ACCOUNT & SECURE SAVE / SUPABASE (P0)
+
+**Execution note (26 Oct 2026):** `/id/account` and `/en/account`, optional browser-only email login, guarded starter-profile/save migration and pgTAP assertions have been **authored in this repo**. These are **not yet connected to a Supabase project**. Actual migration execution, JWT/RLS negative tests, signup, save and E2E acceptance are open. See [Supabase M2 setup](docs/architecture/SUPABASE_M2_SETUP.md).
+
 
 - [ ] **M2-01** Document Supabase ownership, project connection and credentials
   - **Acceptance:** Owner configuration not guessed; env example only

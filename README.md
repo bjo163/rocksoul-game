@@ -4,7 +4,7 @@
 
 **A MOONWITNESS XV story universe game** — a narrative-first, offline-ready 2D adventure RPG × idle restoration × optional social multiplayer. The game is **in preproduction**. This repository is the game-specific home; **[moonwitnessxv](https://github.com/bjo163/moonwitnessxv)** remains the broader knowledge, witness, research and ecosystem source.
 
-**Status:** `M1 BILINGUAL DEMO BUILT / STORY CANON CANDIDATE` — a **local-only interactive browser demo** exists, and the Next.js production build has passed CI. **No Vercel deployment URL, shared online save, Supabase integration, production game launch or approved original canon is claimed**.
+**Status:** `M1 BILINGUAL DEMO BUILT / STORY CANON CANDIDATE` — a **local-only interactive browser demo** exists, and the Next.js production build has passed CI. **Vercel's deployment list reports a READY production build**, but public route rendering was not independently accessible from our external verifier. An optional M2 Supabase account page and SQL migration are now in the repo; **no connected database, authenticated save, production game launch or approved original canon is claimed**.
 
 ## Premise
 
@@ -71,7 +71,7 @@ This is the **owner-created independent game repository** as of 2026-10-26, supe
 
 ## Interactive browser demo (M1) and first online target
 
-The site source now contains `/id`, `/en`, `/id/play`, `/en/play`, `/id/world`, and `/id/archive`. The Signal Station demo charges a transmitter, permits a story choice and saves **only to the current browser's localStorage**. This is an illustrative guest preview and never grants online assets, shared rewards or real multiplayer. It has **not yet been deployed** because the Vercel connector returned HTTP 403 during project creation.
+The site source now contains `/id`, `/en`, `/id/play`, `/en/play`, `/id/world`, and `/id/archive`. The Signal Station demo charges a transmitter, permits a story choice and saves **only to the current browser's localStorage**. This is an illustrative guest preview and never grants online assets, shared rewards or real multiplayer. The owner successfully imported the project: Vercel now reports a **READY production deployment**. This does not prove unrestricted public/browser route access. The browser demo still does not use the server or Supabase.
 
 ### Local run (Node.js 22)
 
@@ -96,3 +96,10 @@ The first **vertical slice** is *The First Signal*: one restoration screen, one 
 ---
 
 *MOONWITNESS: One universe, many witnesses. ROCKSOUL: One journey, many choices.*
+
+## Vercel & optional Supabase online account (M2)
+
+- Vercel imported by owner on 2026-10-26 and reported `READY` from `main` at `4e38bbee...`, before the current M2 scaffold changes. See [deployment runbook](docs/operations/DEPLOYMENT.md).
+- `/id/account` and `/en/account` now include a safely disabled account terminal **until you configure your own Supabase project**.
+- Review the step-by-step [Supabase M2 setup](docs/architecture/SUPABASE_M2_SETUP.md) and migration `supabase/migrations/202610260001_game_accounts.sql`. The database has NOT been created or changed by a repo commit.
+- Hosted accounts initially provision only a player profile and an immutable-to-browser starter save. **No server economy, online transfer of the local demo or multiplayer**.

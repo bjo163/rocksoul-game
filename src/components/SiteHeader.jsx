@@ -3,7 +3,7 @@ import { localizedHref } from "@/lib/i18n.mjs";
 import LocaleSwitch from "@/components/LocaleSwitch.jsx";
 export default function SiteHeader({ locale, m }) {
   const links = [
-    ["", m.nav.home], ["play", m.nav.play], ["world", m.nav.world], ["archive", m.nav.archive]
+    ["", m.nav.home], ["play", m.nav.play], ["world", m.nav.world], ["archive", m.nav.archive], ["account", m.nav.account]
   ];
   return (
     <header className="site-header">

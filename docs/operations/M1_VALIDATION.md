@@ -11,8 +11,8 @@
 | Game web scaffold | Next.js 16.4.3 / React 19.3.1 JS ESM, Node 22, pages localized id/en | PUSHED |
 | Browser demo | Source `src/components/StationDemo.jsx`; localStorage, one beacon, unknown/verify choice | CODE PRESENT, browser E2E pending |
 | Automated validation | [GitHub Actions 40323816638](https://github.com/bjo163/rocksoul-game/actions/runs/40323816638), commit `0c86c9c776b74b7a0e2451faa67db6440d318461` | **PASS** install, structure/Node tests/Next build |
-| Vercel deployment | Git-project creation call returned `403 Forbidden` | **BLOCKED** – no verified URL |
-| Supabase Auth/DB | Not provisioned and deliberately not pretended active | NOT STARTED (M2) |
+| Vercel deployment | Owner imported `rocksoul-game`; provider lists deployment `dpl_3Xd3g1pH7tQQc5jowAENmErkCPyA` from commit `4e38bbee...` | **READY per provider**; external public route smoke not verified |
+| Supabase Auth/DB | Optional browser auth route and SQL/RLS migration authored in repo, no live credentials or DB | **M2 PREPARED**, no backend test yet |
 | Server economy, true online saves, Phaser | Later milestones | NOT STARTED |
 
 ## Build/test evidence limitations
