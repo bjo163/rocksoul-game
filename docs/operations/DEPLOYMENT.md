@@ -41,3 +41,7 @@ Direct main pushes are the user's current workflow; protect release integrity wi
 - A Vercel READY flag does not prove public access; browser smoke/protection review is still open.
 - The hosted account route is **conditionally disabled** until the owner's Supabase URL and publishable key are configured; no SQL migration has been applied by this repository push.
 
+
+## Supabase connection status — 2026-10-26
+
+Plugin connection is active, but listing shows no dedicated `rocksoul-game` Supabase project. Organization `bjo163's projects` has Free plan and older inactive projects; none were changed. The safer private signup-trigger migration is in GitHub only. Auth production readiness awaits explicit database target, running migration, and negative RLS tests.

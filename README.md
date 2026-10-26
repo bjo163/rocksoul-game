@@ -107,3 +107,7 @@ The first **vertical slice** is *The First Signal*: one restoration screen, one 
 ## Verified M2-code CI and redeploy
 
 At source SHA [`648626bd`](https://github.com/bjo163/rocksoul-game/commit/648626bd0dd74346d2cf81c94ae5d2a7df68999c), [GitHub Actions passed](https://github.com/bjo163/rocksoul-game/actions/runs/40325699040) and Vercel reported production READY at the matching commit. Browser/API route accessibility and Supabase sign-in are not certified. See [operations runbook](docs/operations/DEPLOYMENT.md).
+
+### Supabase plugin connected — project pending
+
+On 2026-10-26, Supabase organization discovery succeeded (`bjo163's projects`, Free plan). No dedicated `rocksoul-game` database was found, and no old MOONWITNESS database was modified. The un-applied migration now uses a private Auth signup trigger instead of a public privileged bootstrap RPC. A new project still needs owner-selected organization, cost approval if quoted, and live RLS/registration tests; see [M2 setup](docs/architecture/SUPABASE_M2_SETUP.md).

@@ -85,7 +85,7 @@ Actual dependency changes require updating this register; no claiming future wor
 
 **Integration status:** `main` commit `648626bd` passed [CI](https://github.com/bjo163/rocksoul-game/actions/runs/40325699040), and the corresponding Vercel production deployment was reported **READY**. Account onboarding requires owner's Supabase project and executable RLS verification; provider-ready does not equal live database readiness.
 
-**Execution note (26 Oct 2026):** `/id/account` and `/en/account`, optional browser-only email login, guarded starter-profile/save migration and pgTAP assertions have been **authored in this repo**. These are **not yet connected to a Supabase project**. Actual migration execution, JWT/RLS negative tests, signup, save and E2E acceptance are open. See [Supabase M2 setup](docs/architecture/SUPABASE_M2_SETUP.md).
+**Latest M2 audit:** Supabase connector linked; no project named `rocksoul-game` found; existing old projects inactive and untouched. Hardened trigger-based SQL is prepared but **not applied**. Organization selection and any required billing acknowledgement precede new project creation.\n\n**Execution note (26 Oct 2026):** `/id/account` and `/en/account`, optional browser-only email login, guarded starter-profile/save migration and pgTAP assertions have been **authored in this repo**. These are **not yet connected to a Supabase project**. Actual migration execution, JWT/RLS negative tests, signup, save and E2E acceptance are open. See [Supabase M2 setup](docs/architecture/SUPABASE_M2_SETUP.md).
 
 
 - [ ] **M2-01** Document Supabase ownership, project connection and credentials

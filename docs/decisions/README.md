@@ -28,3 +28,6 @@
 4. Human explicit sign-off required before promoting `GAME_CANON_CANDIDATE` into `APPROVED_GAME_CANON`.
 5. Decisions involving account architecture, monetary economy, media rights, identity or private contents require written risk/reversal paths.
 6. Revalidate upstream XV references before integration. No automatic cross-repo write or migration.
+
+| DEC-018 | Dedicated ROCKSOUL Supabase project separate from dormant historical databases | **PROPOSED / AWAITING OWNER ORGANIZATION SELECTION** | No project created or billing accepted by agent |
+| DEC-019 | Private Auth signup trigger supersedes public security-definer bootstrap RPC | **M2 SECURITY HARDENING IN SOURCE** | Browser can only SELECT own save; migration not applied |
