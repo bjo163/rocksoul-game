@@ -103,3 +103,7 @@ The first **vertical slice** is *The First Signal*: one restoration screen, one 
 - `/id/account` and `/en/account` now include a safely disabled account terminal **until you configure your own Supabase project**.
 - Review the step-by-step [Supabase M2 setup](docs/architecture/SUPABASE_M2_SETUP.md) and migration `supabase/migrations/202610260001_game_accounts.sql`. The database has NOT been created or changed by a repo commit.
 - Hosted accounts initially provision only a player profile and an immutable-to-browser starter save. **No server economy, online transfer of the local demo or multiplayer**.
+
+## Verified M2-code CI and redeploy
+
+At source SHA [`648626bd`](https://github.com/bjo163/rocksoul-game/commit/648626bd0dd74346d2cf81c94ae5d2a7df68999c), [GitHub Actions passed](https://github.com/bjo163/rocksoul-game/actions/runs/40325699040) and Vercel reported production READY at the matching commit. Browser/API route accessibility and Supabase sign-in are not certified. See [operations runbook](docs/operations/DEPLOYMENT.md).

@@ -20,3 +20,13 @@ The GitHub CI runner executed real `npm install`, Node tests and `next build`. N
 
 ## Next validation
 Verify the latest HEAD through GitHub Actions before declaring build green; after project import, test the actual deployment URL and capture screenshots/video, browser console/errors and responsive regressions at the same SHA.
+
+## Automatic redeploy after M2 scaffold — verified
+
+- Source SHA: `648626bd0dd74346d2cf81c94ae5d2a7df68999c` (branch `main`).
+- [GitHub Actions 40325699040](https://github.com/bjo163/rocksoul-game/actions/runs/40325699040) completed **SUCCESS** for npm install, Node tests, structure and Next production build.
+- Vercel `list_deployments` returned production **READY** for that exact SHA; deployment ID `dpl_6cENP4S8mXhfRqLJ4y1WwKKAQxVU`.
+- Actual deployment hostname from provider: `rocksoul-game-31krc7tnn-bjo163s-projects.vercel.app` (use [deployment URL](https://rocksoul-game-31krc7tnn-bjo163s-projects.vercel.app/id)).
+- A Vercel READY flag does not prove public access; browser smoke/protection review is still open.
+- The hosted account route is **conditionally disabled** until the owner's Supabase URL and publishable key are configured; no SQL migration has been applied by this repository push.
+
