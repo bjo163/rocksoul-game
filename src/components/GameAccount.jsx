@@ -8,6 +8,7 @@ export default function GameAccount({ m, locale }) {
   const [email, setEmail] = useState("");
   const [user, setUser] = useState(null);
   const [save, setSave] = useState(null);
+  const [saveLoading, setSaveLoading] = useState(false);
   const [busy, setBusy] = useState(false);
   const [status, setStatus] = useState("");
   const [loading, setLoading] = useState(true);
@@ -34,12 +35,11 @@ export default function GameAccount({ m, locale }) {
     if (!client || !user) return;
     let valid = true;
     setSave(null);
+    setSaveLoading(true);
     (async () => {
       try {
-        // Database function checks auth.uid() and creates ONLY this user's rows.
-        // No currency, repaired beacon or client-supplied user_id is writable here.
-        const { error } = await client.rpc("game_bootstrap");
-        if (error) throw error;
+        // Database Auth signup trigger creates the new user's starting save.
+        // No privileged game_bootstrap RPC is exposed to the browser.
         const result = await client.from("game_saves")
           .select("era_code, revision, beacon_repaired, story_choice")
           .eq("user_id", user.id).single();
@@ -47,6 +47,8 @@ export default function GameAccount({ m, locale }) {
         if (valid) setSave(result.data);
       } catch {
         if (valid) setStatus(m.error);
+      } finally {
+        if (valid) setSaveLoading(false);
       }
     })();
     return () => { valid = false; };
@@ -95,7 +97,7 @@ export default function GameAccount({ m, locale }) {
           <span>{m.era}: <strong>{save.era_code}</strong></span>
           <span>{m.revision}: <strong>{save.revision}</strong></span>
           <span>{m.state}: <strong>{save.beacon_repaired ? "RESTORED" : "NEW"}</strong></span>
-        </div> : <p>{m.bootstrapping}</p>}
+        </div> : <p>{saveLoading ? m.bootstrapping : m.pending}</p>}
       </div>
       <p>{m.note}</p>
     </> : <>
