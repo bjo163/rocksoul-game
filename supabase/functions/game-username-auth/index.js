@@ -51,7 +51,7 @@ Deno.serve(async req => {
       const {data:existing,error:lookupError}=await admin.rpc("rocksoul_auth_email",{p_username:username});
       if(lookupError)return respond(origin,503,{error:"Account service unavailable"});
       if(existing)return respond(origin,409,{error:"Username unavailable"});
-      const email=crypto.randomUUID().replaceAll("-","")+"@accounts.rocksoul-game.invalid";
+      const email=crypto.randomUUID().replaceAll("-","")+"@example.com";
       const {data:created,error:createError}=await admin.auth.admin.createUser({
         email,password,email_confirm:true,user_metadata:{game_username:username}
       });
