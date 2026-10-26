@@ -40,3 +40,14 @@ Primary docs: [RLS](https://supabase.com/docs/guides/database/postgres/row-level
 ## Connected Supabase discovery — 2026-10-26
 
 The Supabase plugin successfully listed **one organization** named `bjo163's projects` on the **Free** plan. No `rocksoul-game` project is present; older MOONWITNESS and unrelated projects are currently `INACTIVE`. No database was modified. Creating a new project requires selecting the intended organization and acknowledging any provider cost. Do not reuse dormant databases. The original public `SECURITY DEFINER` bootstrap RPC was removed from the **unapplied** migration in favor of a private Auth signup trigger.
+
+## Live project provisioned — 2026-10-26
+
+- Project **rocksoul-game**: Supabase ID `uownhjziknlzrvnvfruu`, Singapore (`ap-southeast-1`), `ACTIVE_HEALTHY` on creation.
+- Provider quoted project creation cost **US$0/month** for the chosen Free-plan organization; future billable usage/limits are subject to Supabase's plan terms.
+- Git source migration `202610260001_game_accounts.sql` applied as remote migration version `20261026132826`, name `game_accounts_foundation`.
+- Public tables `game_profiles`, `game_saves` created with RLS; no accounts/save rows present at inspection. Verified: anon SELECT false, authenticated SELECT true, authenticated UPDATE false, private schema usage false, signup trigger installed, exactly two self-read policies.
+- Supabase Security Advisor returned zero reported findings. This does not substitute live two-account negative tests.
+- Vercel project environment variables `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` configured for production/preview, using a **publishable** key only. No secret/service-role key is committed.
+- **Open:** a new Vercel production build is required to embed the newly created environment variables, and Supabase Auth Site URL/allowed redirect URL settings need verification. The Vercel deployment creation API returned `403 Forbidden`; push-based Git integration can trigger a new build. Browser magic-link login, signup trigger E2E and two-user RLS negative tests are not yet verified.
+
