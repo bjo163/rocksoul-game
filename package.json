@@ -1,0 +1,24 @@
+{
+  "name": "rocksoul-game",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "ROCKSOUL: THE LOST SIGNAL — MoonWitness story adventure preview",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "node --test tests/*.test.mjs",
+    "check:structure": "node scripts/check-structure.mjs",
+    "check": "npm run check:structure && npm test",
+    "verify": "npm run check && npm run build"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "next": "16.4.3",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  }
+}
